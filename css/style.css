@@ -1,0 +1,293 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&family=Oswald:wght@300;400;500;600;700&display=swap');
+:root{
+    --clr-top: #009900;
+    --b-color: #2c2c22;
+    --open-san: 'Open Sans', sans-serif;
+    --oswald: 'Oswald', sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 1em;
+}
+
+ul, ol{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+img{
+    vertical-align: middle;
+}
+.container-full{
+    width: 100%;
+}
+.container{
+    width: 85%;
+    margin: 0 auto;
+}
+.row{
+    display: flex;
+    align-items: center;
+}
+.col-3{width: 25%;}
+.col-4{width: 33.33%;}
+.col-5{width: 41.66%;}
+.col-6{width: 50%;}
+.col-12{width: 100%;}
+
+
+/*--- Main css Start----*/
+
+.top-menu{
+    background-color: var(--clr-top);
+    color: #fff;
+}
+.social-icon{
+    display: flex;
+    line-height: 2rem;
+    justify-content: flex-end;
+}
+.social-icon li{
+    margin-left: 0.5rem;
+    width: 2rem;
+    text-align: center;
+}
+.social-icon li>a{
+    color: #fff;
+    position: relative;
+    display: block;
+    margin-top: 1px;
+    margin-bottom: 1px;
+    z-index: 1;
+}
+
+.social-icon li>a::after{
+    content: "";
+    position: absolute;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    transform: scale(0);
+    transition: transform 0.3s;
+}
+.social-icon li>a:hover::after{
+    transform: scale(1);
+    z-index: -1;
+}
+.social-icon li>a:hover{
+    color: var(--clr-top);
+}
+.logo{
+    width: 60px;
+    height: 50px;
+}
+.logo img{
+    width: 100%;
+}
+.main-menu>ul{
+    display: flex;
+    justify-content: flex-end;
+    height: 80px;
+}
+
+.main-menu ul>li {
+	margin-left: 1rem;
+	text-transform: uppercase;
+	padding: 3px 5px;
+    font-family: var(--oswald);
+    font-weight: 500;
+    line-height: 80px;
+}
+
+.main-menu ul>li>a{
+    color: #000;
+    transition: 0.5s;
+}
+
+.main-menu ul>li>a:hover{
+    color: #4488c3;
+}
+
+
+/*---- Banner Section Start ----*/
+.banner{
+    background-image: url(/images/banner.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 87px;
+    padding-bottom: 87px;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 10px;
+   }
+   
+   .banner::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    top: 0;
+    left: 0;
+    z-index: -1;
+   }
+
+.banner-text{
+    color: #fff;
+    font-family: var(--oswald);
+    text-align: right;
+}
+
+.banner-text .heading-text{
+    text-transform: uppercase;
+    padding-bottom: 15px;
+}
+
+.banner-text .heading-text h2{
+    font-size: 30px;
+    font-weight: 400;
+}
+.banner-text .heading-text h1{
+    font-size: 40px;
+    font-size: 700;
+}
+.banner-text p{
+    font-size: 13px;
+    font-family: var(--open-san);
+    font-weight: 400;
+    padding-left: 60%;
+    line-height: 24px;
+    padding-bottom: 20px;
+}
+.banner-btn a{
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 500;
+    padding: 5px 20px;
+    border: 1px solid #fff;
+    display: inline-block;
+    transition: 0.4s;
+}
+.banner-btn .button-1{
+    margin-right: 20px;
+}
+.banner-btn a:hover{
+    background-color: #0872b9;
+    border: 1px solid #0872b9;
+}
+/*--- Banner-1---*/
+ .banner-1{
+    position: relative;
+    width: 100%;
+    height: 400px;
+    display: none;
+}
+   .banner-1 img{
+    width: 100%;
+    height: 400px;
+    margin-bottom: 2rem;
+   }
+   
+   .banner-overlay{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    top: 0;
+    left: 0;
+    
+   }
+
+.banner-text-1{
+    color: #fff;
+    font-family: var(--oswald);
+    text-align: right;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.banner-text-1 .heading-text-1{
+    text-transform: uppercase;
+   
+}
+
+.banner-text-1 .heading-text-1 h2{
+    font-size: 30px;
+    font-weight: 400;
+}
+.banner-text-1 .heading-text-1 h1{
+    font-size: 40px;
+    font-size: 700;
+}
+.banner-text-1 p{
+    font-size: 13px;
+    font-family: var(--open-san);
+    font-weight: 400;
+    padding-left: 60%;
+    line-height: 24px;
+    padding-top: 10px;
+    padding-bottom: 25px;
+}
+.banner-btn-1 a{
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 500;
+    padding: 5px 20px;
+    border: 1px solid #fff;
+    display: inline-block;
+    transition: 0.4s;
+}
+.banner-btn-1 .button-1{
+    margin-right: 20px;
+}
+.banner-btn-1 a:hover{
+    background-color: #0872b9;
+    border: 1px solid #0872b9;
+} 
+
+/*----About Section Start---*/
+
+#about{
+    padding-top: 60px;
+    padding-bottom: 60px;
+    text-align: center;
+}
+.common-heading{
+    position: relative;
+    display: inline-block;
+}
+.common-heading h1{
+    font-size: 24px;    
+    font-weight: 600;
+    text-transform: uppercase;
+    
+}
+.common-heading img{
+    position: absolute;
+    left: 0;
+    bottom:0;
+}
+.about-main{
+    padding-top: 30px;
+}
+.about-text{
+    padding-left: 25px;
+}
+.about-text p{
+    font-size: 13px;
+    line-height: 24px;
+    text-align: justify;
+    font-family: var(--open-san);
+    font-weight: 400;
+}
