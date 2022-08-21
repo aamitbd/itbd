@@ -4,6 +4,7 @@
     --b-color: #2c2c22;
     --open-san: 'Open Sans', sans-serif;
     --oswald: 'Oswald', sans-serif;
+    --col-clr: #f1f1f1;
 }
 *{
     margin: 0;
@@ -60,14 +61,13 @@ p {
 .common-heading{
     position: relative;
     display: inline-block;
-    margin-bottom: 40px;
 }
-.common-heading h1{
+.common-heading>h1{
     font-size: 24px;    
     font-weight: 600;
     text-transform: uppercase;    
 }
-.common-heading img{
+.common-heading>img{
     position: absolute;
     left: 0;
     bottom:0;
@@ -292,7 +292,9 @@ p {
     padding-top: 60px;
     text-align: center;
 }
-
+.about-main {
+    margin-top: 40px;
+}
 .about-text{
     padding-left: 25px;
 }
@@ -305,6 +307,10 @@ p {
 #our-service {
     text-align: center;
     padding-top: 60px;
+    margin-bottom: 60px;
+}
+.service-main {
+    margin-top: 30px;
 }
 
 .service-icon {
@@ -312,9 +318,10 @@ p {
 	height: 70px;
 	background-color: #fff;
 	border-radius: 50%;
-	border: 1px solid #333333;
+	border: 1px solid #e6e6e6;
     position: relative;
     z-index: 1;
+    transition: 0.5s;
 }
 .service-icon>img {
     display: inline-block;
@@ -328,10 +335,11 @@ p {
     width: 90%;
     height: 90%;
     border-radius: 50%;
-    background-color: cyan;
+    background-color: var(--col-clr);
     left: 5%;
     top: 5%;
     z-index: 1;
+    transition: 0.5s;
 }
 .service-icon::after {
 	content: "";
@@ -339,7 +347,33 @@ p {
 	width: calc(100% + 2px);
 	height: calc(100% + 2px);
 	border-radius: 50%;
-	border: 3px solid aqua;
+	border: 3px solid #fff;
 	left: -4px;
 	top: -4px;
+}
+.service-icon:hover {
+    border-color: #5bc5f4;
+}
+.service-icon:hover::before {
+    background-color: #5bc5f4;
+}
+.service-content {
+    background-color: var(--col-clr);
+    margin-left: 20px;
+    margin-top: 30px;
+    position: relative;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.service-content>h3 {
+    padding-top: 3rem;
+}
+.service-content>p {
+    padding: 1.25rem;
+}
+.s-icon-content {
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	top: -19%;
 }
