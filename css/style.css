@@ -23,6 +23,19 @@ a{
 }
 img{
     vertical-align: middle;
+    max-width: 100%;
+}
+h3 {
+    font-size: 19px;
+    font-family: var(--oswald);
+    font-weight: 500;
+    text-transform: uppercase;
+}
+p {
+    font-size: 14px;
+    font-family: var(--open-san);
+    font-weight: 400;
+    line-height: 24px;
 }
 .container-full{
     width: 100%;
@@ -33,14 +46,33 @@ img{
 }
 .row{
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
 }
 .col-3{width: 25%;}
 .col-4{width: 33.33%;}
 .col-5{width: 41.66%;}
 .col-6{width: 50%;}
+.col-7{width: 58.33%;}
+.col-8{width: 66.66%;}
 .col-12{width: 100%;}
 
+.common-heading{
+    position: relative;
+    display: inline-block;
+    margin-bottom: 40px;
+}
+.common-heading h1{
+    font-size: 24px;    
+    font-weight: 600;
+    text-transform: uppercase;    
+}
+.common-heading img{
+    position: absolute;
+    left: 0;
+    bottom:0;
+    width: 60%;
+}
 
 /*--- Main css Start----*/
 
@@ -90,9 +122,7 @@ img{
     width: 60px;
     height: 50px;
 }
-.logo img{
-    width: 100%;
-}
+
 .main-menu>ul{
     display: flex;
     justify-content: flex-end;
@@ -260,34 +290,56 @@ img{
 
 #about{
     padding-top: 60px;
-    padding-bottom: 60px;
     text-align: center;
 }
-.common-heading{
-    position: relative;
-    display: inline-block;
-}
-.common-heading h1{
-    font-size: 24px;    
-    font-weight: 600;
-    text-transform: uppercase;
-    
-}
-.common-heading img{
-    position: absolute;
-    left: 0;
-    bottom:0;
-}
-.about-main{
-    padding-top: 30px;
-}
+
 .about-text{
     padding-left: 25px;
 }
 .about-text p{
-    font-size: 13px;
-    line-height: 24px;
     text-align: justify;
-    font-family: var(--open-san);
-    font-weight: 400;
+    
+}
+
+/*----Our Services Start---*/
+#our-service {
+    text-align: center;
+    padding-top: 60px;
+}
+
+.service-icon {
+	width: 70px;
+	height: 70px;
+	background-color: #fff;
+	border-radius: 50%;
+	border: 1px solid #333333;
+    position: relative;
+    z-index: 1;
+}
+.service-icon>img {
+    display: inline-block;
+    margin-top: 20%;
+    position: relative;
+    z-index: 2;
+}
+.service-icon::before {
+    content: "";
+    position: absolute;
+    width: 90%;
+    height: 90%;
+    border-radius: 50%;
+    background-color: cyan;
+    left: 5%;
+    top: 5%;
+    z-index: 1;
+}
+.service-icon::after {
+	content: "";
+	position: absolute;
+	width: calc(100% + 2px);
+	height: calc(100% + 2px);
+	border-radius: 50%;
+	border: 3px solid aqua;
+	left: -4px;
+	top: -4px;
 }
