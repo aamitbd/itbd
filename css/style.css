@@ -384,23 +384,30 @@ about-image>img {
     padding-top: 60px;
     text-align: center;
     margin-bottom: 60px;
+    margin-bottom: 60px;
 }
-.portfoloi-container {
+.portfolio-container {
     margin-top: 30px;
 }
-.col-b>img, .col-s>img {
-    
+/* .col-b>img, .col-s>img {
+    width: 100%;
+}
+.portfolio-content {
+    margin-right: 1rem;
 }
 
-.col-s {
+.portfolio-content .col-s {
     height: 220px;
     position: relative;
+    margin-bottom: 1rem;
+    
 }
-.col-b {
+.portfolio-content .col-b {
     height: 300px;
     position: relative;
+    margin-bottom: 1rem;
 }
-.overlay {
+.portfolio-content .col-s .overlay, .portfolio-content .col-b .overlay {
     position: absolute;
     width: 100%;
     left: 0;
@@ -427,4 +434,4 @@ about-image>img {
 }
 .col-s:hover .overlay, .col-b:hover .overlay{
     visibility: visible;
-}
+} */
