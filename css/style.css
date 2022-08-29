@@ -389,37 +389,34 @@ about-image>img {
 .portfolio-container {
     margin-top: 30px;
 }
-/* .col-b>img, .col-s>img {
-    width: 100%;
-}
 .portfolio-content {
-    margin-right: 1rem;
+	margin-right: 1rem;
 }
-
-.portfolio-content .col-s {
-    height: 220px;
-    position: relative;
-    margin-bottom: 1rem;
-    
-}
-.portfolio-content .col-b {
-    height: 300px;
-    position: relative;
-    margin-bottom: 1rem;
-}
-.portfolio-content .col-s .overlay, .portfolio-content .col-b .overlay {
-    position: absolute;
+.portfolio-content img {
     width: 100%;
-    left: 0;
-    top: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.3);
+}
+.col-s {
+	margin-bottom: 1rem;
+	position: relative;
+}
+.col-b {
+	margin-bottom: 1rem;
+	position: relative;
+}
+.overlay {
+	position: absolute;
+	width: 100%;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	background-color: rgba(0, 0 , 0, 0.3);
     display: flex;
     justify-content: center;
     align-items: center;
-    visibility: hidden;
+    opacity: 0;
     transition: 0.7s;
 }
+
 .overlay>a{
     display: inline-block;
     width: 3rem;
@@ -432,6 +429,6 @@ about-image>img {
 	text-align: center;
 	line-height: 3rem;
 }
-.col-s:hover .overlay, .col-b:hover .overlay{
-    visibility: visible;
-} */
+.col-s:hover .overlay, .col-b:hover .overlay {
+    opacity: 1;
+}
