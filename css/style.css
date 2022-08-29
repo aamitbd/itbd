@@ -46,7 +46,6 @@ p {
 }
 .row{
     display: flex;
-    
     align-items: center;
 }
 .col-3{width: 25%;}
@@ -364,6 +363,7 @@ about-image>img {
     margin-top: 30px;
     position: relative;
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 1px 3px rgba(0, 0, 0, 0.3);
+    padding-bottom: 1.5rem;
 }
 
 .service-content>h3 {
@@ -388,20 +388,10 @@ about-image>img {
 .portfoloi-container {
     margin-top: 30px;
 }
-.col-b>img, .col-s> {
-    width: 100%;
+.col-b>img, .col-s>img {
+    
 }
-.inner-left {
-    display: flex;
-    flex-direction: column;
-}
-.inner-left .col-s, .inner-right .col-b {
-    margin-bottom: 20px;
-    margin-right: 20px;
-}
-.inner-left .col-b, .inner-right .col-s {
-    margin-right: 20px;
-}
+
 .col-s {
     height: 220px;
     position: relative;
