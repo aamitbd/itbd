@@ -34,6 +34,12 @@ h3 {
     font-weight: 500;
     text-transform: uppercase;
 }
+h5 {
+    font-size: 15px;
+    font-family: var(--oswald);
+    font-weight: 400;
+    text-transform: capitalize;
+}
 p {
     font-family: var(--open-san);
     font-weight: 400;
@@ -49,11 +55,12 @@ p {
 .row{
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
-.col-3{width: 25%;}
-.col-4{width: 33.33%;}
+.col-3{width: 24%;}
+.col-4{width: 32%;}
 .col-5{width: 41.66%;}
-.col-6{width: 50%;}
+.col-6{width: 49.25%;}
 .col-7{width: 58.33%;}
 .col-8{width: 66.66%;}
 .col-12{width: 100%;}
@@ -249,9 +256,7 @@ p {
 
 .banner-text-1 .heading-text-1{
     text-transform: uppercase;
-   
 }
-
 .banner-text-1 .heading-text-1 h2{
     font-size: 30px;
     font-weight: 400;
@@ -313,7 +318,6 @@ about-image>img {
 .service-main {
     margin-top: 30px;
 }
-
 .service-icon {
 	width: 70px;
 	height: 70px;
@@ -360,14 +364,10 @@ about-image>img {
 }
 .service-content {
     background-color: var(--col-clr);
-    margin-left: 20px;
     margin-top: 30px;
     position: relative;
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 1px 3px rgba(0, 0, 0, 0.3);
     padding-bottom: 1.5rem;
-}
-.first-content {
-    margin-left: 0;
 }
 .service-content>h3 {
     padding-top: 3rem;
@@ -394,12 +394,10 @@ about-image>img {
     width: 100%;
 }
 .col-inner {
-    margin: 1rem 0.5rem;
+    margin-top: 1rem;
 	position: relative;
 }
-.col-inner:first-child {
-   margin-bottom: 0.rem;
-}
+
 .overlay {
 	position: absolute;
 	width: 100%;
@@ -413,7 +411,6 @@ about-image>img {
     opacity: 0;
     transition: 0.7s;
 }
-
 .overlay>a{
     display: inline-block;
     width: 3rem;
@@ -436,10 +433,6 @@ about-image>img {
 }
 .team-container {
     margin-top: 30px;
-}
-.team-content {
-    margin-left: 0.5rem;
-    margin-right: 0.5rem;
 }
 .team-image>img {
     width: 100%;
@@ -489,32 +482,37 @@ about-image>img {
     border-color: var(--clr-pr);
 }
 .team-content>h3{
-    font-size: 1.3rem;
-    font-weight: 500;
     padding-top: 10px;
-    padding-bottom: 7px;
     transition: 0.5s;
 }
 .team-content>h3:hover{
     color: var(--clr-pr);
-}
-.team-content>h5{
-    font-size: 1rem;
-    font-weight: 400;
 }
 
 /*-------- Testimonial Section Start --------*/
 #testimonial {
     margin-top: 60px;
     text-align: center;
+    margin-bottom: 60px;
 }
 .tostimonial-content {
     margin-top: 30px;
 }
 .testimonial-text {
-    margin-top: 2.25rem;
-    padding: 1rem;
+    margin-top: 3rem;
+    padding: 1rem 1.25rem;
     background-color: #f1f1f1;
+    position: relative;
+}
+.testimonial-text::before {
+	content: "";
+	position: absolute;
+	border-width: 1.5rem 2.3rem;
+	border-style: solid;
+	border-color: transparent transparent #f1f1f1 transparent;
+	bottom: 100%;
+	left: 50%;
+	transform: translateX(-50%);
 }
 .testimonial-text>span {
     display: block;
@@ -522,13 +520,19 @@ about-image>img {
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
 }
-.testimonial-text>span>i:last-child {
-    fill: #9e1d6c;
-    font-size: 12px;
+.testimonial-text>p {
+    margin-top: 0.5rem;
+    text-align: center;
 }
-.testimonial-text h3 {
-    font-size: 1.25rem;
+/*--- Footer Section stsrt -------*/
+
+.footer-bottom {
+    width: 100%;
+    height: 2.5rem;
+    background-color: #555555;
+    text-align: center;
+    color: #bdbdbd;
 }
-.testimonial-text h5 {
-    font-size: 13px;
+.footer-bottom>p {
+    line-height: 2.25rem;
 }
