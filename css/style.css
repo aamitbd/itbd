@@ -157,7 +157,7 @@ p {
 
 /*---- Banner Section Start ----*/
 .banner{
-    background-image: url(/images/banner.jpg);
+    background-image: url(../images/banner.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
