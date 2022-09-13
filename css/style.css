@@ -543,3 +543,53 @@ about-image>img {
 .footer-bottom>p {
     line-height: 2.25rem;
 }
+.footer-contentt{
+    padding-top: 1.25rem;
+}
+.footer-content > h4 {
+	margin-bottom: 1.35rem;
+	font-size: 1.5rem;
+	font-family: oswald;
+	text-transform: capitalize;
+	font-weight: 500;
+}
+.fcontact-content {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;    
+}
+.fcontact-icon {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    background-color: var(--clr-pr);
+    text-align: center;
+    line-height: 2.5rem;
+    font-size: medium;
+}
+.fcontact-text>p {
+    padding: 3px 10px;
+}
+.fcontact-text>a {
+    display: block;
+    padding: 3px 10px;
+    color: #fff;
+}
+.fcontact-links {
+    display: flex;
+}
+.fcontact-link:first-child{
+    margin-right: 1.75rem;
+}
+.fcontact-link > a {
+	display: block;
+	color: #fff;
+	text-transform: capitalize;
+	padding-bottom: 0.75rem;
+	font-size: 1.15rem;
+}
+.flickr-content{
+    display: flex;
+    margin-bottom: 1.7rem;
+}
+
