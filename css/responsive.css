@@ -6,8 +6,9 @@
     .col-7{width: 58.33%;}
     .col-8{width: 66.66%;}
     .col-12{width: 100%;}
+    .col-f-4{width: 32%;}
 
-    /*--- About Section --- */
+/*--- About Section --- */
     .about-text {
         padding-left: 3rem;
     }
@@ -64,7 +65,142 @@
 }
 
 @media screen and (max-width: 768px) {
-    .col-3, .col-4 {
-        width: 50%;
+    .row {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .col-2, .col-3, .col-f-4 {
+        width: 49%;
+    }
+    .col-4, .col-5, .col-6, .col-7{
+        width: 100%;
+    }
+/*---- Menu Section ---*/
+    .main-menu {
+        display: none;
+    }
+    #bar-menu{
+        display: block;
+    }
+    .main-menu ul {
+        display: block;
+        background-color: var(--clr-top);
+        height: 90vh;
+        padding: 1.5rem;
+    }
+    .main-menu ul>li{
+        line-height: 3rem;
+        text-align: center;
+    }
+    .main-menu ul>li>a{
+        color: #fff;
+    }
+    .banner-text .heading-text h1 {
+        font-size: 30px;
+    }
+    .banner-text .heading-text h2 {
+        font-size: 30px;
+    }
+    /*---About Section ---*/
+    .about-image {
+        text-align: center;
+    }
+    .about-text {
+        padding-left: 0;
+        padding-top: 2rem;
+    }
+/*--- Service Section ---*/
+    .service-content {
+        margin-top: 5rem;
+    }
+/*--- Portfolio Section ---*/
+    .col-inner {
+        margin-right: 1rem;
+    }
+/*--- Team Section ---*/
+    .team-content {
+        margin-right: 1rem;
+        margin-top: 2rem;
+    }
+    .team-overlay > a {
+        width: 3rem;
+        height: 3rem;
+        margin-top: 0.35rem;
+        margin-bottom: 0.35rem;
+    }
+    .team-overlay > a > i {
+        line-height: 3rem;
+        font-size: 1.7rem;
+    }
+/*--- Footer Section ---*/
+    .footer-content{
+        height: 250px;
+    }
+    .footer-logo {
+        margin-top: -2rem;
+    }
+    
+}
+
+@media screen and (max-width: 576px) {
+    .banner-text .heading-text h1 {
+        font-size: 25px;
+    }
+    .banner-text .heading-text h2 {
+        font-size: 25px;
+    }
+/*--- Footer Section ---*/
+    .footer-logo {
+        margin-top: 0;
+    }
+    .footer-logo > p {
+        padding-right: 1rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .col-2, .col-3, .col-f-4 {
+        width: 100%;
+    }
+    p{
+        text-align: justify;
+    }
+/*---- Portfolio Secction ---*/
+    .col-inner {
+        margin-right: 0;
+    }
+/*---- Team Secction ---*/
+    .team-content {
+        margin-right: 0;
+    }
+    .team-overlay > a {
+        width: 4.5rem;
+        height: 4.5rem;
+        margin-top: 1.1rem;
+        margin-bottom: 1.1rem;
+    }
+    .team-overlay > a > i {
+        line-height: 4.5rem;
+        font-size: 1.9rem;
+    }
+/*---- Testimonial Secction ---*/
+    .testimonial-text > p {
+        text-align: justify;
+    }
+/*---- Footer Secction ---*/
+    .footer-logo{
+        padding-bottom: 2rem;
+    }
+    .footer-logo > p {
+        padding-right: 0;
+    }
+    .footer-content{
+        height: 225px;
+    }
+    .fcontact-link:first-child {
+        margin-right: 3.5rem;
+    }
+    .col-f-4{
+        height: 275px;
     }
 }

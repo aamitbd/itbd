@@ -63,6 +63,7 @@ p {
     .col-7{width: 58.33%;}
     .col-8{width: 66.66%;}
     .col-12{width: 100%;}
+    .col-f-4{width: 32%;}
 }
 
 .common-heading{
@@ -127,6 +128,20 @@ p {
 }
 .logo{
     width: 95px;
+}
+#header-logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-mob {
+    display: inline-block;
+    font-size: 2rem;
+    cursor: pointer;
+}
+#bar-menu, #close-menu {
+    display: none;
 }
 .main-menu>ul{
     display: flex;
@@ -362,7 +377,7 @@ about-image>img {
 }
 .service-content {
     background-color: var(--col-clr);
-    margin-top: 30px;
+    margin-top: 3rem;
     position: relative;
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 1px 3px rgba(0, 0, 0, 0.3);
     padding-bottom: 1.5rem;
@@ -386,7 +401,7 @@ about-image>img {
     text-align: center;
 }
 .portfolio-container {
-    margin-top: 40px;
+    margin-top: 3rem;
 }
 .portfolio-content img {
     width: 100%;
@@ -430,7 +445,7 @@ about-image>img {
     text-align: center;
 }
 .team-container {
-    margin-top: 40px;
+    margin-top: 3rem;
 }
 .team-image>img {
     width: 100%;
@@ -495,7 +510,7 @@ about-image>img {
     margin-bottom: 60px;
 }
 .tostimonial-content {
-    margin-top: 40px;
+    margin-top: 3rem;
 }
 .testimonial-text {
     margin-top: 3rem;
@@ -527,7 +542,6 @@ about-image>img {
 .footer-main {
     background-color: #353535;
     padding-top: 20px;
-    padding-bottom: 45px;
     color: #fff;
 }
 .footer-logo {
@@ -605,9 +619,9 @@ about-image>img {
     width: 100%;
     height: 2.5rem;
     background-color: #555555;
-    text-align: center;
     color: #bdbdbd;
 }
 .footer-bottom>p {
     line-height: 2.25rem;
+    text-align: center;
 }
