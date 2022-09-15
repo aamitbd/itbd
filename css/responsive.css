@@ -23,6 +23,9 @@
         font-size: 1.5rem;
     }
 /*--- Footer Section --- */
+    .footer-logo {
+        margin-top: -2rem;
+    }
     .footer-logo p{
         line-height: 1.3rem;
     }
@@ -57,5 +60,11 @@
     }
     .flickr-item img {
         height: 75px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .col-3, .col-4 {
+        width: 50%;
     }
 }
