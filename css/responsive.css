@@ -7,7 +7,10 @@
     .col-8{width: 66.66%;}
     .col-12{width: 100%;}
     .col-f-4{width: 32%;}
-    
+/*--- Banner Section ---*/
+    .banner-text p {
+        padding-left: 50%;
+    }
 /*--- About Section --- */
     .about-text {
         padding-left: 3rem;
@@ -95,6 +98,10 @@
     .main-menu ul>li>a{
         color: #fff;
     }
+    /*--- Banner Section ---*/
+    .banner-text p {
+        padding-left: 41%;
+    }
     .banner-text .heading-text h1 {
         font-size: 30px;
     }
@@ -143,11 +150,19 @@
 }
 
 @media screen and (max-width: 576px) {
+/*--- Banner Section ---*/
+    .banner-text p {
+        padding-left: 35%;
+        line-height: 19px;
+    }
     .banner-text .heading-text h1 {
         font-size: 25px;
     }
     .banner-text .heading-text h2 {
         font-size: 25px;
+    }
+    .banner-btn a {
+        padding: 5px 15px;
     }
 /*--- Footer Section ---*/
     .footer-logo {
