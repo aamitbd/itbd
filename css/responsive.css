@@ -79,6 +79,9 @@
         width: 100%;
     }
 /*---- Menu Section ---*/
+    .social-icon li{
+        margin-left: 0.35rem;
+    }
     .main-menu {
         display: none;
     }

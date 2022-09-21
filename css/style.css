@@ -88,6 +88,9 @@ p {
     background-color: var(--clr-top);
     color: #fff;
 }
+.top-left, .top-right{
+    width: 50%;
+}
 .social-icon{
     display: flex;
     line-height: 2rem;
